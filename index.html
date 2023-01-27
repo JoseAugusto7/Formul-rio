@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acampamento</title>
+
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pousada</h1>
+        <p>Bem vindo ao início da sua calmaria,<br> preencha os dados por favor.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <div class="nome">
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" required placeholder="Coloque seu nome"><br>
+            </div>
+            <div class="email">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required placeholder="Coloque seu email"><br>
+            </div>
+            <div class="idade">
+                <label for="idade">Idade</label><br>
+                <input type="number" name="idade" id="idade" required min="18" placeholder="Sua idade"><br>
+            </div>
+            <div class="prof">
+                <label for="prof">Profissão (Opcional)</label><br>
+                <input type="text" name="prof" id="prof" placeholder="Sua profissão"><br>
+            </div>
+            <div class="rec">
+                <p>Recomendaria-nos para algum conhecido?</p>
+                <input type="radio" name="rec" id="sim" checked>
+                <label for="sim">Sim!</label><br>
+                <input type="radio" name="rec" id="talvez">
+                <label for="talvez">Talvez...</label><br>
+                <input type="radio" name="rec" id="nao">
+                <label for="nao">Não sei.</label><br>
+            </div>
+            <div class="gost">
+                <p>Qual área você mais gostou?</p>
+                <select name="areas" id="areas">
+                    <option selected disabled value="">Escolha uma área</option>
+                    <option value="pisc">Piscina</option>
+                    <option value="acad">Academia</option>
+                    <option value="rest">Restaurante</option>
+                    <option value="jog">Área de jogos</option>
+                    <option value="laz">Área de lazer</option>
+                </select>
+            </div>
+            <div class="ativ">
+                <p>Qual atividade mais te interessou?</p>
+                <input type="checkbox" name="fut" id="fut">
+                <label for="fut">Futebol</label><br>
+                <input type="checkbox" name="vol" id="vol">
+                <label for="vol">Volei</label><br>
+                <input type="checkbox" name="nat" id="nat">
+                <label for="nat">Natação</label><br>
+                <input type="checkbox" name="musc" id="musc">
+                <label for="musc">Musculação</label><br>
+                <input type="checkbox" name="sinuca" id="sinuca">
+                <label for="sinuca">Sinuca</label><br>
+                <input type="checkbox" name="ping" id="ping">
+                <label for="ping">Ping-Pong</label><br>
+            </div>
+            <div class="coment">
+                <label for="coment">Comentários ou sugestões?</label>
+                <textarea name="coment" id="coment" cols="30" rows="5" placeholder="Comente aqui!"></textarea><br>
+            </div>   
+            <input class="botao" type="submit" value="Enviar!">
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
